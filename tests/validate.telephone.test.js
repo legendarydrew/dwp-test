@@ -1,4 +1,4 @@
-const { validateTelephone } = require('../modules/validation');
+const { validateTelephone } = require('../src/modules/validation');
 
 describe('Telephone number validation', () => {
     test('should accept valid formats', () => {

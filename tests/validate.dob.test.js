@@ -1,4 +1,4 @@
-const {validateDOB, validateDOBDay, validateDOBMonth, validateDOBYear } = require('../modules/validation');
+const {validateDOB, validateDOBDay, validateDOBMonth, validateDOBYear } = require('../src/modules/validation');
 
 describe('Date of Birth validation', () => {
     describe('day', () => {

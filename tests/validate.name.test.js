@@ -1,4 +1,4 @@
-const { validateName } = require('../modules/validation');
+const { validateName } = require('../src/modules/validation');
 
 describe('Name validation', () => {
     test('should accept valid names', () => {
@@ -20,8 +20,6 @@ describe('Name validation', () => {
 
     test('should reject invalid names', () => {
         const names = [
-            undefined,
-            '',
             '   ',
             ' - ',
             '---',
@@ -32,8 +30,20 @@ describe('Name validation', () => {
         ];
 
         for (let i = 0; i < names.length; i++) {
+            expect(validateName(names[i])).toEqual('Name must contain at least three letters.');
+        }
+    });
+
+    test('should reject undefined names', () => {
+        const names = [
+            undefined,
+            null,
+            ''
+        ];
+
+        for (let i = 0; i < names.length; i++) {
             console.debug(names[i]);
-            expect(validateName(names[i])).toBeFalsy();
+            expect(validateName(names[i])).toEqual('Name is required.');
         }
     });
 });

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tracy Traque</title>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <h1>Tracy Traque's Detail Collection System</h1>
+    </header>
+
+    <main>
+        <form method="post" name="new_details" onsubmit="addNewDetails(this)">
+            <fieldset>
+                <legend>New details</legend>
+                <div class="form__row">
+                    <label for="newName">Name</label>
+                    <div>
+                        <input id="newName" name="name" type="text" placeholder="As it appears on their ID">
+                        <span class="validation" id="v[name]"></span>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <label for="newEmail">Email address</label>
+                    <div>
+                        <input id="newEmail" name="email" type="email">
+                        <span class="validation" id="v[email]"></span>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <label for="newDOBDay">Date of Birth</label>
+                    <div>
+                        <input id="newDOBDay" name="dob_day" type="text" size="2" maxlength="2" placeholder="DD">
+                        /
+                        <input id="newDOBMonth" name="dob_month" type="text" size="2" maxlength="2" placeholder="MM">
+                        /
+                        <input id="newDOBYear" name="dob_year" type="text" size="4" maxlength="4" placeholder="YYYY">
+                        <span class="validation" id="v[dob]"></span>
+                        <span class="validation" id="v[dob_day]"></span>
+                        <span class="validation" id="v[dob_month]"></span>
+                        <span class="validation" id="v[dob_year]"></span>
+                    </div>
+                </div>
+                <div class="form__row">
+                    <label for="newName">Telephone</label>
+                    <div>
+                        <input id="newTelephone" name="telephone" type="text">
+                        <span class="validation" id="v[telephone]"></span>
+                    </div>
+                </div>
+                <div class="form__row--submit">
+                    <button type="submit">Add Details</button>
+                </div>
+            </fieldset>
+        </form>
+
+        <!-- TODO display existing addresses. -->
+        <div id="addresses">
+
+        </div>
+    </main>
+
+    <footer>
+        Copyright © Drew Maughan / Perfect Zero Labs.
+    </footer>
+</div>
+<script src="./main.js"></script>
+</body>
+</html>

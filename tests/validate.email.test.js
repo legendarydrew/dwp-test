@@ -1,4 +1,4 @@
-const {validateEmail} = require('../modules/validation');
+const {validateEmail} = require('../src/modules/validation');
 
 // With thanks to http://softwaretesterfriend.com/manual-testing/valid-invalid-email-address-format-validation
 
