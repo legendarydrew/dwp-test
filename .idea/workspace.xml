@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -23,19 +24,104 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/jest" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Drew\Documents\Projects\dwp\tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Name validation">
+    <configuration name="Date of Birth validation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/validate.dob.test.js" />
+      <test-names>
+        <test-name value="Date of Birth validation" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Date of Birth validation.should accept valid dates" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/tests/validate.dob.test.js" />
+      <test-names>
+        <test-name value="Date of Birth validation" />
+        <test-name value="should accept valid dates" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Email validation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/validate.email.test.js" />
+      <test-names>
+        <test-name value="Email validation" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Name validation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/validate.name.test.js" />
+      <test-names>
+        <test-name value="Name validation" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Telephone number validation" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/tests/validate.telephone.test.js" />
+      <test-names>
+        <test-name value="Telephone number validation" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Name validation" />
+        <item itemvalue="Jest.Email validation" />
+        <item itemvalue="Jest.Telephone number validation" />
+        <item itemvalue="Jest.Date of Birth validation" />
+        <item itemvalue="Jest.Date of Birth validation.should accept valid dates" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -45,11 +131,105 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601889698608</updated>
-      <workItem from="1601889700714" duration="1730000" />
+      <workItem from="1601889700714" duration="12049000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1601904972492">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601904972492" />
+    <state width="1323" height="191" key="GridCell.Tab.0.center" timestamp="1601904972491">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601904972491" />
+    <state width="1323" height="191" key="GridCell.Tab.0.left" timestamp="1601904972491">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601904972491" />
+    <state width="1323" height="191" key="GridCell.Tab.0.right" timestamp="1601904972492">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="191" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601904972492" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1601902881395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601902881395" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1601902881395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.738@0.0.1366.738" timestamp="1601902881395" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1601902881394">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.738@0.0.1366.738" timestamp="1601902881394" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1601902881395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.738@0.0.1366.738" timestamp="1601902881395" />
+    <state width="1323" height="238" key="GridCell.Tab.2.bottom" timestamp="1601902881396">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601902881396" />
+    <state width="1323" height="238" key="GridCell.Tab.2.center" timestamp="1601902881395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.center/0.0.1366.738@0.0.1366.738" timestamp="1601902881395" />
+    <state width="1323" height="238" key="GridCell.Tab.2.left" timestamp="1601902881395">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.left/0.0.1366.738@0.0.1366.738" timestamp="1601902881395" />
+    <state width="1323" height="238" key="GridCell.Tab.2.right" timestamp="1601902881396">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.2.right/0.0.1366.738@0.0.1366.738" timestamp="1601902881396" />
+    <state width="1323" height="238" key="GridCell.Tab.3.bottom" timestamp="1601902881397">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.3.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601902881397" />
+    <state width="1323" height="238" key="GridCell.Tab.3.center" timestamp="1601902881396">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.3.center/0.0.1366.738@0.0.1366.738" timestamp="1601902881396" />
+    <state width="1323" height="238" key="GridCell.Tab.3.left" timestamp="1601902881396">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.3.left/0.0.1366.738@0.0.1366.738" timestamp="1601902881396" />
+    <state width="1323" height="238" key="GridCell.Tab.3.right" timestamp="1601902881396">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1601902881396" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601900296047">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601900296047" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modules/validation.js</url>
+          <line>56</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modules/validation.js</url>
+          <line>44</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/modules/validation.js</url>
+          <line>36</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
