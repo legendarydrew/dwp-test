@@ -21,7 +21,7 @@ describe('Date of Birth validation', () => {
                 ''
             ];
             for (let i = 0; i <= days.length; i++) {
-                expect(validateDOBDay(days[i])).toBeFalsy();
+                expect(validateDOBDay(days[i])).not.toEqual(true);
             }
         });
     });
@@ -45,7 +45,7 @@ describe('Date of Birth validation', () => {
                 ''
             ];
             for (let i = 0; i <= months.length; i++) {
-                expect(validateDOBMonth(months[i])).toBeFalsy();
+                expect(validateDOBMonth(months[i])).not.toEqual(true);
             }
         });
     });
@@ -56,10 +56,10 @@ describe('Date of Birth validation', () => {
         });
 
         test('should not accept a two-digit year', () => {
-            expect(validateDOBYear('00')).toBeFalsy();
-            expect(validateDOBYear('98')).toBeFalsy();
-            expect(validateDOBYear('64')).toBeFalsy();
-            expect(validateDOBYear('12')).toBeFalsy();
+            expect(validateDOBYear('00')).not.toEqual(true);
+            expect(validateDOBYear('98')).not.toEqual(true);
+            expect(validateDOBYear('64')).not.toEqual(true);
+            expect(validateDOBYear('12')).not.toEqual(true);
         });
 
         test('should accept a four-digit year', () => {
@@ -83,8 +83,7 @@ describe('Date of Birth validation', () => {
                 ''
             ];
             for (let i = 0; i < years.length; i++) {
-                console.debug(years[i]);
-                expect(validateDOBYear(years[i])).toBeFalsy();
+                expect(validateDOBYear(years[i])).not.toEqual(true);
             }
         });
     });
@@ -98,7 +97,6 @@ describe('Date of Birth validation', () => {
             {day: '25', month: '12', year: '2014'},
         ];
         for (let i = 0; i < dates.length; i++) {
-            console.debug(dates[i]);
             expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).toBeTruthy();
         }
     });
@@ -112,8 +110,7 @@ describe('Date of Birth validation', () => {
             {day: '5', month: '5', year: '64'},
         ];
         for (let i = 0; i < dates.length; i++) {
-            console.debug(dates[i]);
-            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).toBeFalsy();
+            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).not.toEqual(true);
         }
     });
 
@@ -124,7 +121,7 @@ describe('Date of Birth validation', () => {
             {day: '7000', month: '1', year: '2000'},
         ];
         for (let i = 0; i < dates.length; i++) {
-            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).toBeFalsy();
+            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).not.toEqual(true);
         }
     });
 
@@ -135,7 +132,7 @@ describe('Date of Birth validation', () => {
             {day: '1', month: '100', year: '2000'},
         ];
         for (let i = 0; i < dates.length; i++) {
-            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).toBeFalsy();
+            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).not.toEqual(true);
         }
     });
 
@@ -147,8 +144,7 @@ describe('Date of Birth validation', () => {
             {day: '1', month: '1', year: '499'},
         ];
         for (let i = 0; i < dates.length; i++) {
-            console.debug(dates[i]);
-            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).toBeFalsy();
+            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).not.toEqual(true);
         }
     });
 
@@ -161,7 +157,7 @@ describe('Date of Birth validation', () => {
             {day: '-2', month: '6', year: '2000'},
         ];
         for (let i = 0; i < dates.length; i++) {
-            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).toBeFalsy();
+            expect(validateDOB(dates[i].day, dates[i].month, dates[i].year)).not.toEqual(true);
         }
     });
 

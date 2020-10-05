@@ -13,7 +13,6 @@ describe('Name validation', () => {
         ];
 
         for (let i = 0; i < names.length; i++) {
-            console.debug(names[i]);
             expect(validateName(names[i])).toBeTruthy();
         }
     });
@@ -42,7 +41,6 @@ describe('Name validation', () => {
         ];
 
         for (let i = 0; i < names.length; i++) {
-            console.debug(names[i]);
             expect(validateName(names[i])).toEqual('Name is required.');
         }
     });

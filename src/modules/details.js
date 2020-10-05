@@ -1,11 +1,11 @@
-import validation from './validation';
+const validation = require('./validation');
 
 let errors = {};
 
-export function addDetails(fields) {
+const addDetails = (fields) => {
     errors = validateDetails(fields);
 
-    if ( hasValidationErrors() ) {
+    if (!hasValidationErrors()) {
         saveDetails(fields);
         return true;
     }
@@ -13,20 +13,20 @@ export function addDetails(fields) {
     return false;
 }
 
-export function getValidationErrors() {
+const getValidationErrors = () => {
     return errors;
 }
 
-export function hasValidationErrors () {
+const hasValidationErrors = () => {
     const keys = Object.keys(errors);
     for (let i of keys) {
-        if ( errors.hasOwnProperty(i)) {
+        if (errors.hasOwnProperty(i)) {
             if (true !== errors[i]) {
-                return false;
+                return true;
             }
         }
     }
-    return true;
+    return false;
 }
 
 const validateDetails = (params) => {
@@ -49,13 +49,21 @@ const saveDetails = (fields) => {
     localStorage.setItem(localStorageKey, JSON.stringify(rows));
 }
 
-export function loadDetails() {
+const loadDetails = () => {
     const rows = localStorage.getItem(localStorageKey);
     return rows ? JSON.parse(rows) : [];
 }
 
-export function removeDetails(index) {
+const removeDetails = (index) => {
     const rows = loadDetails();
     rows.splice(index, 1);
     localStorage.setItem(localStorageKey, JSON.stringify(rows));
+}
+
+module.exports = {
+    addDetails,
+    loadDetails,
+    removeDetails,
+    getValidationErrors,
+    hasValidationErrors
 }

@@ -65,7 +65,7 @@ const validateDOBYear = (year) => {
 };
 
 const validateDOB = (day, month, year) => {
-    if (!validateDOBYear(year)) {
+    if (true !== validateDOBYear(year)) {
         return 'Invalid year.'; // Invalid year.
     }
 

@@ -30,7 +30,7 @@ describe('Telephone number validation', () => {
         ];
 
         for (let i = 0; i <= numbers.length; i++) {
-            expect(validateTelephone(numbers[i])).toBeFalsy();
+            expect(validateTelephone(numbers[i])).not.toBe(true);
         }
     });
 });

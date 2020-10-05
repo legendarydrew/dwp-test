@@ -49,7 +49,7 @@ describe('Email validation', () => {
         ];
 
         for (let i = 0; i < emails.length; i++) {
-            expect(validateEmail(emails[i])).toBeFalsy();
+            expect(validateEmail(emails[i])).not.toBe(true);
         }
     });
 });

@@ -13,6 +13,7 @@
   "author": "Drew Maughan <drew@pzlabs.co>",
   "license": "ISC",
   "devDependencies": {
+    "faker": "^5.1.0",
     "jest": "^26.5.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
