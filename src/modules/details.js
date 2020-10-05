@@ -53,3 +53,9 @@ export function loadDetails() {
     const rows = localStorage.getItem(localStorageKey);
     return rows ? JSON.parse(rows) : [];
 }
+
+export function removeDetails(index) {
+    const rows = loadDetails();
+    rows.splice(index, 1);
+    localStorage.setItem(localStorageKey, JSON.stringify(rows));
+}

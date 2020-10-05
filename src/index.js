@@ -27,6 +27,11 @@ window.addNewDetails = (form) => {
     return false;
 }
 
+window.removeDetails = (index) => {
+    details.removeDetails(index);
+    displaySavedDetails();
+}
+
 const displayValidationErrors = () => {
     const errors = details.getValidationErrors();
     const keys = Object.keys(errors);
@@ -57,13 +62,21 @@ const displaySavedDetails = () => {
     }
 
     // Add a new row for each set of details.
-    for (let item of ttLog) {
+    for (let i = 0; i < ttLog.length; ++i) {
+        const item = ttLog[i];
         const row = document.createElement('tr');
         row.insertCell(0).innerHTML = item.name;
         row.insertCell(1).innerText = formatDOB(item);
         row.insertCell(2).innerText = item.email;
         row.insertCell(3).innerText = item.telephone;
-        // TODO display a delete button.
+
+        // Display a delete button.
+        const button = document.createElement('button');
+        button.className = 'details__delete';
+        button.innerText = 'Delete';
+        button.onclick = () => removeDetails( i );
+        row.insertCell(4).appendChild(button);
+
         tbody.append(row);
     }
 }
