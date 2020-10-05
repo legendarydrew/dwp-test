@@ -1,6 +1,7 @@
 const details = require('./modules/details');
 
-// TODO delete rows.
+// TODO testing the details module.
+// TODO testing methods in this file.
 // TODO styling.
 
 window.addNewDetails = (form) => {
@@ -18,8 +19,8 @@ window.addNewDetails = (form) => {
     if ( details.addDetails(payload) ) {
         // The details were successfully saved.
         form.reset();
+        displaySuccessMessage();
         displaySavedDetails();
-        // TODO display a success message, remove it after a few seconds.
     }
 
     displayValidationErrors();
@@ -52,8 +53,6 @@ const displayValidationErrors = () => {
 const displaySavedDetails = () => {
     const ttLog = details.loadDetails();
     const tbody = document.querySelector('#addresses tbody');
-
-    console.log('Displaying saved information');
 
     // Remove existing rows.
     // (Using option 2A from https://stackoverflow.com/a/3955238)
@@ -89,7 +88,22 @@ const formatDOB = (item) => {
     return day + '/' + month + '/' + year;
 }
 
+let successTimeout;
+
+const displaySuccessMessage = () => {
+    clearTimeout(successTimeout);
+    const success = document.getElementById('success');
+    success.style.display = 'block';
+    successTimeout = setTimeout(hideSuccessMessage, 5000);
+}
+
+const hideSuccessMessage = () => {
+    const success = document.getElementById('success');
+    success.style.display = 'none';
+}
+
 (() => {
     // Self-executing method that runs when everything is ready.
+    hideSuccessMessage();
     displaySavedDetails();
 })();
