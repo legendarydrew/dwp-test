@@ -1,5 +1,8 @@
 const details = require('./modules/details');
 
+// TODO delete rows.
+// TODO styling.
+
 window.addNewDetails = (form) => {
     event.preventDefault();
     const payload = {
@@ -12,8 +15,12 @@ window.addNewDetails = (form) => {
         },
         telephone: form.telephone.value
     }
-    const outcome = details.addDetails(payload);
-    console.log('saved details?', outcome);
+    if ( details.addDetails(payload) ) {
+        // The details were successfully saved.
+        form.reset();
+        displaySavedDetails();
+        // TODO display a success message, remove it after a few seconds.
+    }
 
     displayValidationErrors();
 
@@ -36,3 +43,40 @@ const displayValidationErrors = () => {
         }
     }
 }
+
+const displaySavedDetails = () => {
+    const ttLog = details.loadDetails();
+    const tbody = document.querySelector('#addresses tbody');
+
+    console.log('Displaying saved information');
+
+    // Remove existing rows.
+    // (Using option 2A from https://stackoverflow.com/a/3955238)
+    while (tbody.firstChild) {
+        tbody.removeChild(tbody.lastChild);
+    }
+
+    // Add a new row for each set of details.
+    for (let item of ttLog) {
+        const row = document.createElement('tr');
+        row.insertCell(0).innerHTML = item.name;
+        row.insertCell(1).innerText = formatDOB(item);
+        row.insertCell(2).innerText = item.email;
+        row.insertCell(3).innerText = item.telephone;
+        // TODO display a delete button.
+        tbody.append(row);
+    }
+}
+
+const formatDOB = (item) => {
+    const day = ('00' + item.dob.day).substr(-2);
+    const month = ('00' + item.dob.month).substr(-2);
+    const year = ('0000' + item.dob.year).substr(-4);
+
+    return day + '/' + month + '/' + year;
+}
+
+(() => {
+    // Self-executing method that runs when everything is ready.
+    displaySavedDetails();
+})();

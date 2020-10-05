@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/details.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/modules/validation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.dob.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.dob.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.email.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.email.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.name.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.name.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.telephone.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.telephone.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/details.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,14 +146,30 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601889698608</updated>
-      <workItem from="1601889700714" duration="16206000" />
+      <workItem from="1601889700714" duration="18420000" />
     </task>
+    <task id="LOCAL-00001" summary="Introduced webpack to build the JS file, added form validation.">
+      <created>1601909222890</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601909222890</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Introduced webpack to build the JS file, added form validation." />
+    <option name="LAST_COMMIT_MESSAGE" value="Introduced webpack to build the JS file, added form validation." />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="308" y="57" key="CommitChangelistDialog2" timestamp="1601909218514">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="308" y="57" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1601909218514" />
     <state width="1323" height="191" key="GridCell.Tab.0.bottom" timestamp="1601906448636">
       <screen x="0" y="0" width="1366" height="738" />
     </state>

@@ -2,12 +2,11 @@ import validation from './validation';
 
 let errors = {};
 
-export function addDetails (form) {
-    errors = validateDetails(form);
-    console.log(errors);
-    if ( hasValidationErrors() ) {
-        // todo save details.
+export function addDetails(fields) {
+    errors = validateDetails(fields);
 
+    if ( hasValidationErrors() ) {
+        saveDetails(fields);
         return true;
     }
 
@@ -40,4 +39,17 @@ const validateDetails = (params) => {
         dob: validation.validateDOB(params.dob.day, params.dob.month, params.dob.year),
         telephone: validation.validateTelephone(params.telephone)
     };
+}
+
+const localStorageKey = 'ttData';
+
+const saveDetails = (fields) => {
+    const rows = loadDetails();
+    rows.push(fields);
+    localStorage.setItem(localStorageKey, JSON.stringify(rows));
+}
+
+export function loadDetails() {
+    const rows = localStorage.getItem(localStorageKey);
+    return rows ? JSON.parse(rows) : [];
 }
