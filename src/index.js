@@ -1,4 +1,5 @@
 const details = require('./modules/details');
+require('./style');
 
 // TODO testing methods in this file.
 // TODO styling.

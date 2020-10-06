@@ -1,0 +1,9 @@
+@import "vars";
+
+#success {
+  background: $success-bg-colour;
+  color: $success-text-colour;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  padding: 1em;
+}

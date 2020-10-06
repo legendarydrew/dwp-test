@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Tracy Traque</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./main.css">
 </head>
 <body>
 <div class="wrapper">
@@ -20,17 +23,21 @@
                     Details have been saved.
                 </div>
 
+                <p>
+                    <small>All fields are required.</small>
+                </p>
+
                 <div class="form__row">
                     <label for="newName">Name</label>
                     <div>
-                        <input id="newName" name="name" type="text" placeholder="As it appears on their ID">
+                        <input id="newName" class="full-width" name="name" type="text" autofocus placeholder="As it appears on their ID">
                         <span class="validation" id="v[name]"></span>
                     </div>
                 </div>
                 <div class="form__row">
                     <label for="newEmail">Email address</label>
                     <div>
-                        <input id="newEmail" name="email" type="email">
+                        <input id="newEmail" class="full-width" name="email" type="email">
                         <span class="validation" id="v[email]"></span>
                     </div>
                 </div>
@@ -49,9 +56,9 @@
                     </div>
                 </div>
                 <div class="form__row">
-                    <label for="newName">Telephone</label>
+                    <label for="newTelephone">Telephone</label>
                     <div>
-                        <input id="newTelephone" name="telephone" type="text">
+                        <input id="newTelephone" class="full-width" name="telephone" type="text">
                         <span class="validation" id="v[telephone]"></span>
                     </div>
                 </div>
@@ -62,18 +69,28 @@
         </form>
 
         <!-- Display existing addresses. -->
-        <table id="addresses">
-            <thead>
-            <tr>
-                <th>Name</th>
-                <th>DOB</th>
-                <th>Email</th>
-                <th>Telephone</th>
-            </tr>
-            </thead>
-            <tbody>
-            </tbody>
-        </table>
+        <div id="addresses">
+            <table>
+                <colgroup>
+                    <col style="width: 20em">
+                    <col style="width: 6em">
+                    <col style="">
+                    <col style="">
+                    <col style="width: 4em;">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>DOB</th>
+                    <th>Email</th>
+                    <th>Telephone</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
     </main>
 
     <footer>

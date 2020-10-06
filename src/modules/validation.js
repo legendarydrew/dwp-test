@@ -66,7 +66,7 @@ const validateDOBYear = (year) => {
 
 const validateDOB = (day, month, year) => {
     if (true !== validateDOBYear(year)) {
-        return 'Invalid year.'; // Invalid year.
+        return '';
     }
 
     day = parseInt(day, 10);
@@ -78,9 +78,9 @@ const validateDOB = (day, month, year) => {
     now.setHours(0, 0, 0, 0);
 
     if (!(date.getMonth() === month && date.getDate() === day)) {
-        return 'Invalid date.'; // invalid date.
+        return 'Invalid date.';
     } else if (now < date) {
-        return 'Date must not be in the future.'; // date is in the future.
+        return 'Date must not be in the future.';
     }
 
     return true;
@@ -89,7 +89,7 @@ const validateDOB = (day, month, year) => {
 const validateTelephone = function (telephone) {
     if (telephone) {
         // Regular expression taken from https://stackoverflow.com/a/29767609
-        const regExp = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i;
+        const regExp = /^[\+]?[(]?[0-9]{3,5}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/i;
         if (null === telephone.match(regExp)) {
             return 'Invalid telephone number.';
         }

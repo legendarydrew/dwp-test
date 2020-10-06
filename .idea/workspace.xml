@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/details.add-details.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/details.get-validation-errors.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/details.has-validation-errors.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/details.load-details.test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/details.remove-details.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dwp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dwp.iml" afterDir="false" />
+    <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="Adding rudimentary styling.">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_addresses.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_success.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/style.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.dob.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.dob.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.email.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.email.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.name.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.name.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/validate.telephone.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/validate.telephone.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +30,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -47,12 +46,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.16.3" />
     <property name="javascript.nodejs.core.library.typings.version" value="12.12.62" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -154,7 +156,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601889698608</updated>
-      <workItem from="1601889700714" duration="28918000" />
+      <workItem from="1601889700714" duration="46063000" />
     </task>
     <task id="LOCAL-00001" summary="Introduced webpack to build the JS file, added form validation.">
       <created>1601909222890</created>
@@ -184,48 +186,62 @@
       <option name="project" value="LOCAL" />
       <updated>1601912766373</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Adding test suites for the details module.">
+      <created>1601940828064</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601940828064</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Introduced webpack to build the JS file, added form validation." />
     <MESSAGE value="Save and load details as they are added." />
     <MESSAGE value="Ability to remove saved information." />
     <MESSAGE value="Display a success message once details are saved." />
-    <option name="LAST_COMMIT_MESSAGE" value="Display a success message once details are saved." />
+    <MESSAGE value="Adding test suites for the details module." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding test suites for the details module." />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="92" y="92" width="1182" height="554" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1601916563186">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.738@0.0.1366.738" timestamp="1601916563186" />
-    <state x="308" y="57" key="CommitChangelistDialog2" timestamp="1601912762796">
+    <state x="308" y="57" key="CommitChangelistDialog2" timestamp="1601963436451">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="57" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1601912762796" />
-    <state x="129" y="56" key="DiffContextDialog" timestamp="1601912748201">
+    <state x="308" y="57" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1601963436451" />
+    <state x="129" y="56" key="DiffContextDialog" timestamp="1601961549352">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1601912748201" />
-    <state width="1323" height="193" key="GridCell.Tab.0.bottom" timestamp="1601940405034">
+    <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1601961549352" />
+    <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1601958383688">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="193" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601940405034" />
-    <state width="1323" height="193" key="GridCell.Tab.0.center" timestamp="1601940405034">
+    <state x="463" y="124" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1601958383688" />
+    <state width="1323" height="193" key="GridCell.Tab.0.bottom" timestamp="1601947358967">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="193" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601940405034" />
-    <state width="1323" height="193" key="GridCell.Tab.0.left" timestamp="1601940405034">
+    <state width="1323" height="193" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1601947358967" />
+    <state width="1323" height="193" key="GridCell.Tab.0.center" timestamp="1601947358967">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="193" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601940405034" />
-    <state width="1323" height="193" key="GridCell.Tab.0.right" timestamp="1601940405034">
+    <state width="1323" height="193" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1601947358967" />
+    <state width="1323" height="193" key="GridCell.Tab.0.left" timestamp="1601947358966">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state width="1323" height="193" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601940405034" />
+    <state width="1323" height="193" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1601947358966" />
+    <state width="1323" height="193" key="GridCell.Tab.0.right" timestamp="1601947358967">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state width="1323" height="193" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1601947358967" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1601940147811">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -278,13 +294,17 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="184" y="14" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1601937325676" />
-    <state x="390" y="102" width="585" height="534" key="find.popup" timestamp="1601940404936">
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1" timestamp="1601957490955">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="390" y="102" width="585" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601940404936" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601900296047">
+    <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1601957490955" />
+    <state x="390" y="102" width="585" height="534" key="find.popup" timestamp="1601961459903">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601900296047" />
+    <state x="390" y="102" width="585" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601961459903" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601941940312">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738@0.0.1366.738" timestamp="1601941940312" />
   </component>
 </project>

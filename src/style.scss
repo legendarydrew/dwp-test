@@ -1,0 +1,65 @@
+@import "scss/vars";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  background: $header-bg-colour;
+  color: $header-text-colour;
+  padding: 1rem;
+
+  @media (min-width: 720px) {
+    padding: 1rem 2em;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    @media (min-width: 720px) {
+      font-size: 2rem;
+    }
+    margin: 0;
+  }
+}
+
+main {
+  box-sizing: border-box;
+  display: block;
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: $layout-max-width;
+  overflow: auto;
+  padding: 1rem;
+  width: 100%;
+
+  @media (min-width: 720px) {
+    padding: 2rem 2em;
+  }
+}
+
+footer {
+  background: $footer-bg-colour;
+  color: $footer-text-colour;
+  font-size: .8rem;
+  font-weight: bold;
+  padding: .5rem 1em;
+  text-align: center;
+}
+
+@import "scss/addresses";
+@import "scss/form";
+@import "scss/success";

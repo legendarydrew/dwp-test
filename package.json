@@ -13,8 +13,13 @@
   "author": "Drew Maughan <drew@pzlabs.co>",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^4.3.0",
     "faker": "^5.1.0",
     "jest": "^26.5.0",
+    "mini-css-extract-plugin": "^0.11.3",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.3.0",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }

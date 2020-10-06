@@ -1,0 +1,44 @@
+@import "vars";
+
+#addresses {
+  overflow-x: auto;
+  margin: 2rem 0;
+  width: 100%;
+
+  table {
+    border: 1px solid $table-border-colour;
+    border-collapse: collapse;
+    font-size: .9rem;
+    width: 100%;
+  }
+
+  th {
+    background: $table-header-bg-colour;
+    border-bottom: 1px solid $table-border-colour;
+    font-weight: bold;
+    padding: .5em;
+    text-align: left;
+  }
+
+  td {
+    border-bottom: 1px solid $table-border-colour;
+    padding: .5em;
+    white-space: nowrap;
+  }
+
+  tbody {
+    tr:nth-of-type(even) {
+      background: $table-alt-row-bg-colour;
+    }
+  }
+
+  .details__delete {
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    background: $delete-bg-colour;
+    color: $delete-text-colour;
+    font-weight: bold;
+    padding: .25rem 1em;
+  }
+}
