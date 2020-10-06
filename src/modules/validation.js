@@ -1,9 +1,9 @@
 // NOTE: these validation methods heavily assume that they will be passed string values, ie. from a form.
 
-const validateName = name => {
+const validateName = (name) => {
     // Basic validation, checking whether the name is at least three characters long.
     // Some people might be known by a single name!
-    if ( name ) {
+    if (name) {
         const regExp = /^(?=.*[A-zÀ-ÿ]{3})[A-zÀ-ÿ- ']+$/i; // NOTE: [a-z -] will not work!
         // This expression contains a "look ahead" condition, which checks for at least three letters:
         //    (?=.*[A-zÀ-ÿ]{3})
@@ -18,8 +18,8 @@ const validateName = name => {
     return 'Name is required.';
 };
 
-const validateEmail = email => {
-    if ( email ) {
+const validateEmail = (email) => {
+    if (email) {
         // Regular expression taken from https://html.form.guide/best-practices/validate-email-address-using-javascript/
         const regExp = /^(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])$/;
         if (null === email.match(regExp)) {

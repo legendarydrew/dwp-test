@@ -1,3 +1,4 @@
+require('localstorage-browser-polyfill');
 const details = require('./modules/details');
 require('./style');
 
@@ -76,7 +77,7 @@ const displaySavedDetails = () => {
         button.onclick = () => removeDetails( i );
         row.insertCell(4).appendChild(button);
 
-        tbody.append(row);
+        tbody.appendChild(row);
     }
 }
 

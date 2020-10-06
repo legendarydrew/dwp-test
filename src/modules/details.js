@@ -4,7 +4,6 @@ let errors = {};
 
 const addDetails = (fields) => {
     errors = validateDetails(fields);
-
     if (!hasValidationErrors()) {
         saveDetails(fields);
         return true;
@@ -42,22 +41,36 @@ const validateDetails = (params) => {
 }
 
 const localStorageKey = 'ttData';
+let lsBackup = [];
 
 const saveDetails = (fields) => {
-    const rows = loadDetails();
-    rows.push(fields);
-    localStorage.setItem(localStorageKey, JSON.stringify(rows));
+    // IE doesn't support localStorage on a local filesystem, so we'll use an array to simulate it.
+    if (typeof (localStorage) !== "undefined") {
+        const rows = loadDetails();
+        rows.push(fields);
+        localStorage.setItem(localStorageKey, JSON.stringify(rows));
+    } else {
+        lsBackup.push(fields);
+    }
 }
 
 const loadDetails = () => {
-    const rows = localStorage.getItem(localStorageKey);
-    return rows ? JSON.parse(rows) : [];
+    if (typeof (localStorage) !== "undefined") {
+        const rows = localStorage.getItem(localStorageKey);
+        return rows ? JSON.parse(rows) : [];
+    }
+
+    return lsBackup;
 }
 
 const removeDetails = (index) => {
-    const rows = loadDetails();
-    rows.splice(index, 1);
-    localStorage.setItem(localStorageKey, JSON.stringify(rows));
+    if (typeof (localStorage) !== "undefined") {
+        const rows = loadDetails();
+        rows.splice(index, 1);
+        localStorage.setItem(localStorageKey, JSON.stringify(rows));
+    } else {
+        lsBackup.splice(index, 1);
+    }
 }
 
 module.exports = {

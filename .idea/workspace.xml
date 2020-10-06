@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="Adding rudimentary styling.">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_addresses.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_success.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/scss/_vars.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/style.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/modules/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="SCSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -156,7 +150,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601889698608</updated>
-      <workItem from="1601889700714" duration="46063000" />
+      <workItem from="1601889700714" duration="52935000" />
     </task>
     <task id="LOCAL-00001" summary="Introduced webpack to build the JS file, added form validation.">
       <created>1601909222890</created>
@@ -193,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601940828064</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Adding rudimentary styling.">
+      <created>1601965775998</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601965775998</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,7 +207,8 @@
     <MESSAGE value="Ability to remove saved information." />
     <MESSAGE value="Display a success message once details are saved." />
     <MESSAGE value="Adding test suites for the details module." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding test suites for the details module." />
+    <MESSAGE value="Adding rudimentary styling." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding rudimentary styling." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -214,14 +216,14 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.738@0.0.1366.738" timestamp="1601916563186" />
-    <state x="308" y="57" key="CommitChangelistDialog2" timestamp="1601963436451">
+    <state x="308" y="57" key="CommitChangelistDialog2" timestamp="1601965746729">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="308" y="57" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1601963436451" />
-    <state x="129" y="56" key="DiffContextDialog" timestamp="1601961549352">
+    <state x="308" y="57" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1601965746729" />
+    <state x="129" y="56" key="DiffContextDialog" timestamp="1601969189454">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1601961549352" />
+    <state x="129" y="56" key="DiffContextDialog/0.0.1366.738@0.0.1366.738" timestamp="1601969189454" />
     <state x="463" y="124" key="FileChooserDialogImpl" timestamp="1601958383688">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -290,6 +292,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state width="1323" height="238" key="GridCell.Tab.3.right/0.0.1366.738@0.0.1366.738" timestamp="1601940147813" />
+    <state x="487" y="71" key="RollbackChangesDialog" timestamp="1601969204220">
+      <screen x="0" y="0" width="1366" height="738" />
+    </state>
+    <state x="487" y="71" key="RollbackChangesDialog/0.0.1366.738@0.0.1366.738" timestamp="1601969204220" />
     <state x="184" y="14" key="SettingsEditor" timestamp="1601937325676">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -298,10 +304,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="dock-window-1/0.0.1366.738@0.0.1366.738" timestamp="1601957490955" />
-    <state x="390" y="102" width="585" height="534" key="find.popup" timestamp="1601961459903">
+    <state x="390" y="102" width="585" height="534" key="find.popup" timestamp="1601969162194">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="390" y="102" width="585" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601961459903" />
+    <state x="390" y="102" width="585" height="534" key="find.popup/0.0.1366.738@0.0.1366.738" timestamp="1601969162194" />
     <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1601941940312">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
