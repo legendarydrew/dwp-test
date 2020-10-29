@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-    </list>
+    <list default="true" id="7a968f14-b17f-4100-ac63-53fbc5633ad4" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -147,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601889698608</updated>
       <workItem from="1601889700714" duration="53809000" />
-      <workItem from="1603719344878" duration="607000" />
+      <workItem from="1603719344878" duration="2362000" />
     </task>
     <task id="LOCAL-00001" summary="Introduced webpack to build the JS file, added form validation.">
       <created>1601909222890</created>
@@ -198,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601985043905</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Creating README content.">
+      <created>1603719997645</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603719997645</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +215,8 @@
     <MESSAGE value="Adding test suites for the details module." />
     <MESSAGE value="Adding rudimentary styling." />
     <MESSAGE value="Adding support for IE11." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding support for IE11." />
+    <MESSAGE value="Creating README content." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creating README content." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
@@ -221,10 +224,10 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="92" y="92" width="1182" height="554" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1366.738@0.0.1366.738" timestamp="1601916563186" />
-    <state x="85" y="44" key="CommitChangelistDialog2" timestamp="1601985039462">
+    <state x="85" y="44" key="CommitChangelistDialog2" timestamp="1603719991977">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="85" y="44" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1601985039462" />
+    <state x="85" y="44" key="CommitChangelistDialog2/0.0.1366.738@0.0.1366.738" timestamp="1603719991977" />
     <state x="129" y="56" key="DiffContextDialog" timestamp="1601984901524">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
